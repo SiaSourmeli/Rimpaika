@@ -10,7 +10,7 @@ function Header() {
         <header>
                 <nav className="navbar">
 
-                <div><a href="#" className="nav-logo">KR</a></div>
+                <div><a href="#home" className="nav-logo">KR</a></div>
                 
                 <ul className={`nav-menu ${menuOpen ? 'nav-menu--open' : ''}`}>
                     <li className="nav-item">

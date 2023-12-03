@@ -4,7 +4,7 @@ function Biography () {
         <h3 id="biography">BIOGRAPHY</h3>
 
         <div className="biography-container">
-              <img src="https://ucarecdn.com/85698eb3-e145-4871-871f-6ffbfa6f5136/-/preview/500x500/-/quality/smart_retina/-/format/auto/" className="biography-image">
+              <img src="https://ucarecdn.com/85698eb3-e145-4871-871f-6ffbfa6f5136/-/preview/500x500/-/quality/smart_retina/-/format/auto/" className="biography-image" alt="Katerina Rimpatsiou">
               </img>
               <p className="biography-text">
                 Katerina Rimpatsiou was born in Litochoro Pierias and she studied 

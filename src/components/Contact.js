@@ -18,11 +18,11 @@ function Contact() {
                     <ul>
                         <li>
                             <a href="https://www.facebook.com/rimpaika">
-                                <img src={facebookLogo}/>
+                                <img src={facebookLogo} alt="facebook logo"/>
                             </a>
 
-                            <a href="https://www.facebook.com/rimpaika" >
-                                <img src={instagramLogo}/>
+                            <a href="https://www.facebook.com/rimpaika">
+                                <img src={instagramLogo} alt="instagram logo"/>
                             </a>
                         </li>
                     </ul>
