@@ -39,10 +39,9 @@ function SelectedWork () {
       ];
       
     return (
-        <div id="selected-work" >
+        <div id="selected-work" className="container" >
             <h3>SELECTED WORK</h3>
-      
-            <div><Gallery images={images} /></div>
+            {/* <div><Gallery images={images} /></div> */}
         </div>
     )
 }

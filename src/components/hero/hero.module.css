@@ -1,0 +1,54 @@
+/*Main */
+.heroContainer {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 230px);
+    
+    /* css for text */
+    display: flex;
+    padding: 80px 24px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .heroImage {
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+.darkenOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 230px);
+    background-color: rgba(0, 0, 0, 0.3); 
+    z-index: 1;
+}
+
+.homeImageText {
+    position: relative;
+    color: var(--text-primary);
+    text-align: center;
+    z-index: 2;
+}
+
+.homeTitleH1 {
+    font-family: sans-serifcinzel,serif;
+    font-size: 1.5em;
+    margin: 0px;
+    font-weight: lighter;
+}
+
+.homeTitleH2 {
+    font-family: sans-serifcinzel,serif;
+    font-size: 4.5em;
+    margin: 0;
+    font-weight: lighter;
+    letter-spacing: 20px;
+}
+
