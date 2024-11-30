@@ -1,0 +1,45 @@
+.textWrap {
+  text-align: center;
+}
+
+.textWrap > p {
+  padding: 15px;
+}
+
+.mediaWrap > ul {
+  color: white;
+  list-style-type: none;
+  display: inline;
+}
+
+.media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 80px;
+  margin: 0 auto;
+}
+
+.underlineHoverEffect {
+  position: relative;
+}
+
+.underlineHoverEffect::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--text-primary);
+  transition: width 0.25s ease-out;
+}
+
+.underlineHoverEffect:hover::before {
+  width: 100%;
+}
+
+/* .hoverEffectReverse::before {
+  background-color: var(--background);
+} */

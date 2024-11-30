@@ -1,0 +1,30 @@
+/*Biography*/
+.bioContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bioImage {
+    max-width: 400px;
+/*media query*/
+    flex: 0 0 50%;
+}
+
+.bioText {
+    margin-left: 20px;
+    line-height: 1.8em;
+    text-align: justify;
+    max-width: 400px;
+    line-height: 24px;
+    /*media query*/
+    flex: 0 0 30%;
+}
+
+@media only screen and (max-width: 950px) {
+    .bioContainer {
+        flex-direction: column;
+    }
+    .bioText {
+        margin: 20px;  }
+    }
