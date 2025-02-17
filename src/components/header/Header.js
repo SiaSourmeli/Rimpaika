@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import Button from "../button/Button";
 import styles from "./header.module.css";
-import Logo from '../logo/logo'
-import pngLogo from '../../assets/katerina logo150x.png'
+import whiteLogo from '../../assets/logo-white.png'
+
 
 function Header() {
   const [scrollData, setScrollData] = useState({ y: 0, lastY: 0 });
@@ -49,7 +49,7 @@ function Header() {
         <div className={styles.headerContainer}>
           <div>
             <a href="home" className={styles.navLogo} aria-label="logo">
-            <img src={pngLogo} alt=" logo"/>
+            <img src={whiteLogo} alt=" logo" className={styles.logo}/>
             </a>
           </div>
 
