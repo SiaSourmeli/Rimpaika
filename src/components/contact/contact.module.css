@@ -7,7 +7,7 @@
 }
 
 .mediaWrap > ul {
-  color: white;
+  color: var(--text-primary);
   list-style-type: none;
   display: inline;
 }

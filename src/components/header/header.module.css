@@ -54,15 +54,9 @@
     margin-right: auto;
   }
 
-  .navLogo {
-    font-size: 2.1em;
-    color: var(--text-primary);
-    text-decoration: none;
-    font-family:  sans-serifcinzel,serif;
-    flex: 1;
-    position: relative;
-    z-index: 1;
-}
+  .logo {
+    width: 180px;
+  }
 
   .headerContainer {
     display: flex;
@@ -79,8 +73,6 @@
     transform: translateY(-100%);
   }
   
- 
-    
   .navMenu {
     background-color: var(--background);
     display: flex;
@@ -94,6 +86,7 @@
     flex-direction: column;
     gap: 32px;
     align-items: center;
+    background-color: var(--background);
   }
     
   .navLink {
@@ -105,7 +98,7 @@
   
   .navLink:hover,
   .navLink:focus {
-    color: #f88f40;;
+    color: var(--text-green);
   }
   
   .navLink::after {
@@ -113,7 +106,7 @@
     height: 2px;
     width: 100%;
     display: block;
-    background: #f88f40;;
+    background: var(--text-green);
     opacity: 0;
     transition: all 0.2s;
   }
@@ -122,7 +115,7 @@
     opacity: 1;
   }
   
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 768px) {
     .navMenu {
       position: absolute;
       width: 100%;
@@ -145,7 +138,7 @@
     }
   }
   
-  @media only screen and (min-width: 800px) {
+  @media only screen and (min-width: 768px) {
     .navMenu ul {
       padding: 0px;
       flex-direction: row;
