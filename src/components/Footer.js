@@ -1,9 +1,9 @@
 function Footer() {
-    const currentYear = new Date().getFullYear();
+    // const currentYear = new Date().getFullYear();
 
     return (
       <footer>
-        <div>&copy; {currentYear} by Sia Sourmeli. All rights reserved.</div>
+        <div>Made by Konstantina Baka</div>
       </footer>
     );
   }

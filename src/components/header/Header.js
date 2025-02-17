@@ -28,7 +28,7 @@ function Header() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [menuOpen]);
 
   useEffect(() => {
     if (scrollData.y > 250 && scrollData.y - scrollData.lastY > 0) {
