@@ -1,56 +1,20 @@
-.gridContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    height: 700px;
-    gap: 16px;
-    padding: 16px;
-  }
-  
-  .gridItem {
-    cursor: pointer;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .gridImage {
-    transition: transform 0.3s ease, opacity 0.3s ease;
-  }
-  
-  .gridItem:hover .gridImage {
-    transform: scale(1.05);
-    opacity: 0.9;
-  }
-
-  .btnWrap {
-    display: flex;
-    justify-content: center;
-  }
-
-  
-/* View All Button */ 
-button {
-  padding: 12.5px 30px;
-  border: 0;
-  border-radius: 100px;
-  background-color: var(--background-secondary);
-  color: var(--text-secondary);
-  /* font-weight: Bold; */
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  font-size: 16px;
+.workGrid img {
+  border-radius: 24px;
 }
 
-button:hover {
-  background-color: var(--text-green);
-  box-shadow: 0 0 20px #6fc5ff50;
-  transform: scale(1.1);
+
+/* not used at the moment */
+.gridImage {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+
+  width: 100%;
+  height: auto; /* Maintains aspect ratio */
+  object-fit: contain; /* Ensures the entire image is visible */
+  max-width: 100%; /* Ensures images don’t overflow */
+  max-height: 350px; /* Adjust this value based on your layout */
 }
 
-button:active {
-  background-color: var(--text-green);
-  transition: all 0.25s;
-  -webkit-transition: all 0.25s;
-  box-shadow: none;
-  transform: scale(0.98);
+.gridItem:hover .gridImage {
+  /* transform: scale(1.02);
+    opacity: 0.9; */
 }

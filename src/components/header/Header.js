@@ -48,7 +48,7 @@ function Header() {
       <nav className={styles.navbar}>
         <div className={styles.headerContainer}>
           <div>
-            <a href="home" className={styles.navLogo} aria-label="logo">
+            <a href="/" className={styles.navLogo} aria-label="logo">
             <img src={whiteLogo} alt=" logo" className={styles.logo}/>
             </a>
           </div>
@@ -60,25 +60,25 @@ function Header() {
           >
             <ul className={`nav-menu ${menuOpen ? "nav-menu--open" : ""}`}>
               <li>
-                <a href="#selected-work" className={styles.navLink}>
-                  Selected Work
+                <a href="/work" className={styles.navLink}>
+                  Work
                 </a>
               </li>
 
-              <li>
+              {/* <li>
                 <a href="#exhibitions" className={styles.navLink}>
                   Exhibitions
                 </a>
-              </li>
+              </li> */}
 
               <li>
-                <a href="#biography" className={styles.navLink}>
+                <a href="/bio" className={styles.navLink}>
                   Biography
                 </a>
               </li>
 
               <li>
-                <a href="#contact" className={styles.navLink}>
+                <a  className={styles.navLink}>
                   Contact
                 </a>
               </li>
