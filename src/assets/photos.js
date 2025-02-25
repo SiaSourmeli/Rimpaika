@@ -40,7 +40,7 @@ export const photos = [
     { src: "https://ucarecdn.com/f9fc73ff-15ac-4ff6-9d84-35761168a338/-/preview/887x684/-/quality/smart_retina/-/format/auto/", width: 887, height: 684, title: "39" },
     { src: "https://ucarecdn.com/e6a5da13-e65f-4106-8f4e-9dc1b8504c5e/-/preview/889x685/-/quality/smart_retina/-/format/auto/", width: 889, height: 685, title: "40" },
     { src: "https://ucarecdn.com/82b7ebfd-31ce-43f9-b08d-f43ca3099ffa/-/preview/875x672/-/quality/smart_retina/-/format/auto/", width: 875, height: 672, title: "41" },
-    { src: "https://ucarecdn.com/2b50d4fa-877e-458f-a14e-477dc02d59ac/-/preview/882x678/-/quality/smart_retina/-/format/auto/", width: 882, height: 678, title: "42" },
+    { src: "https://ucarecdn.com/2b50d4fa-877e-4582-a14e-477dc02d59ac/-/preview/882x678/-/quality/smart_retina/-/format/auto/", width: 882, height: 678, title: "42" },
     { src: "https://ucarecdn.com/4f75162f-ccc4-40b0-aa66-2b926c58bd91/-/preview/460x563/-/quality/smart_retina/-/format/auto/", width: 460, height: 563, title: "43" },
     { src: "https://ucarecdn.com/979be825-bd02-4d2d-b008-fd757a1207f2/-/preview/900x720/-/quality/smart_retina/-/format/auto/", width: 900, height: 720, title: "44" },
     { src: "https://ucarecdn.com/77610f75-3731-4fc4-a4e0-edbfc7552382/-/preview/721x720/-/quality/smart_retina/-/format/auto/", width: 721, height: 720, title: "45" },

@@ -78,7 +78,7 @@ function Header() {
               </li>
 
               <li>
-                <a  className={styles.navLink}>
+                <a href="/contact" className={styles.navLink}>
                   Contact
                 </a>
               </li>
