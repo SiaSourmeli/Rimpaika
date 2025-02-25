@@ -5,11 +5,9 @@ import Contact from "../components/contact/Contact";
 export function Home() {
   return (
     <>
-      <div>
-        <Hero />
-        <SelectedWork />
-        <Contact />
-      </div>
+      <Hero />
+      <SelectedWork />
+      <Contact />
     </>
   );
 }

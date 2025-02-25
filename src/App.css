@@ -13,10 +13,6 @@ body {
   color: var(--text-primary);
 }
 
-/* body {
-    margin: auto;
-  } */
-
 html {
   scroll-behavior: smooth;
 }
@@ -64,7 +60,7 @@ h3 {
   --background-secondary: black;
   --text-primary: black;
   --text-secondary: #fff;
-  --text-green: #f08b50;
+  --text-green: #807670;
   /* --header-transition: transform 360ms cubic-bezier(0.4, 0, 0.2, 1); bug when user reduces screen  */
 }
 

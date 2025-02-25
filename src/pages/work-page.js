@@ -1,9 +1,9 @@
-import Work from "../components/work";
+import WorkGallery from "../components/workGallery";
 
 export function WorkPage() {
   return (
     <>
-      <Work />
+      <WorkGallery />
     </>
   );
 }

@@ -65,12 +65,6 @@ function Header() {
                 </a>
               </li>
 
-              {/* <li>
-                <a href="#exhibitions" className={styles.navLink}>
-                  Exhibitions
-                </a>
-              </li> */}
-
               <li>
                 <a href="/bio" className={styles.navLink}>
                   Biography

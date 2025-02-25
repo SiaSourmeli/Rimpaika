@@ -1,10 +1,15 @@
 import React, { useState } from "react";
-import Lightbox from "react-18-image-lightbox";
-import "react-18-image-lightbox/style.css";
 import styles from "./selected-work.module.css";
 import { Link } from "react-router";
+import WorkGallery from "../workGallery";
+import { photos } from "../../assets/photos";
 
 function SelectedWork() {
+
+  const selectedPhotos = photos.filter(photo => 
+    ["13", "16", "19", "55", "51", "46", "10", "45", "23"].includes(photo.title) 
+  );
+
   const images = [
     {
       src: "https://ucarecdn.com/105338dc-735e-414c-a25e-432a876ac8d4/-/preview/683x682/-/quality/smart_retina/-/format/auto/",
@@ -56,60 +61,13 @@ function SelectedWork() {
     },
   ];
 
-  const [isOpen, setIsOpen] = useState(false);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  const openLightbox = (index) => {
-    setCurrentImageIndex(index);
-    setIsOpen(true);
-  };
-
-  const closeLightbox = () => {
-    setIsOpen(false);
-  };
-
-  const moveToNext = () => {
-    setCurrentImageIndex((currentImageIndex + 1) % images.length);
-  };
-
-  const moveToPrev = () => {
-    setCurrentImageIndex(
-      (currentImageIndex + images.length - 1) % images.length
-    );
-  };
 
   return (
     <div id="selectedWork" className="container">
       <h3>WORK</h3>
-      <div className={styles.gridContainer}>
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className={styles.gridItem}
-            onClick={() => openLightbox(index)}
-          >
-            <img
-              src={image.src}
-              alt={image.title}
-              className={styles.gridImage}
-            />
-          </div>
-        ))}
-      </div>
-
-      {isOpen && (
-        <Lightbox
-          mainSrc={images[currentImageIndex].src}
-          nextSrc={images[(currentImageIndex + 1) % images.length].src}
-          prevSrc={
-            images[(currentImageIndex + images.length - 1) % images.length].src
-          }
-          onCloseRequest={closeLightbox}
-          onMovePrevRequest={moveToPrev}
-          onMoveNextRequest={moveToNext}
-          imageTitle={images[currentImageIndex].title}
-        />
-      )}
+  
+      <WorkGallery selectedPhotos={selectedPhotos} />
+      
 
       <Link to="/work" className={styles.btnWrap}>
         <button className={styles.viewBtn}>View All</button>
