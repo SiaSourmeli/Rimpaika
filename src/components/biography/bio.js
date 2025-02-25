@@ -1,6 +1,6 @@
-import styles from "./biography.module.css";
+import styles from "./bio.module.css";
 
-function Biography() {
+function Bio() {
   return (
     <div className="container">
       <h3 id="biography">BIOGRAPHY</h3>
@@ -8,7 +8,7 @@ function Biography() {
       <div className={styles.bioContainer}>
         <div className={styles.bioImage}>
           <img
-            src="https://ucarecdn.com/85698eb3-e145-4871-871f-6ffbfa6f5136/-/preview/500x500/-/quality/smart_retina/-/format/auto/"
+            src="https://ucarecdn.com/6c03782e-003d-468f-afb9-9a55226367eb/-/preview/1000x666/-/quality/smart_retina/-/format/auto/"
             alt="Katerina Rimpatsiou"
           ></img>
         </div>
@@ -30,4 +30,4 @@ function Biography() {
   );
 }
 
-export default Biography;
+export default Bio;
