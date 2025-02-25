@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import Lightbox from "react-18-image-lightbox";
 import "react-18-image-lightbox/style.css";
-import PhotoAlbum from "react-photo-album";
 import { photos } from "../../assets/photos";
 import styles from "./work.module.css";
 import { RowsPhotoAlbum } from "react-photo-album";
