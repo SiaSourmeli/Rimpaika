@@ -34,7 +34,7 @@ function WorkGallery({ selectedPhotos }) {
             target="_blank"
             rel="noreferrer"
           >
-            <img src={photo.thumbnail} alt={`Gallery image ${photo.title}`} />
+            <img src={photo.thumbnail} alt={`Gallery ${photo.title}`} />
           </a>
         ))}
       </div>

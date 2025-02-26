@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./selected-work.module.css";
 import { Link } from "react-router";
 import WorkGallery from "../workGallery";
