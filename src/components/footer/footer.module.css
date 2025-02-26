@@ -1,0 +1,7 @@
+.footerWrap {
+    background-color: var(--background-secondary) ;
+  }
+
+  .footerText {
+    color: var(  --text-secondary);
+  }

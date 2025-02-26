@@ -1,30 +1,37 @@
 /*Biography*/
 .bioContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .bioImage {
-    max-width: 400px;
-/*media query*/
-    flex: 0 0 50%;
+  max-width: 400px;
+  /*media query*/
+  flex: 0 0 50%;
+}
+
+.bioImage img {
+  border-radius: 10px;
+  border: 5px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
 }
 
 .bioText {
-    margin-left: 20px;
-    line-height: 1.8em;
-    text-align: justify;
-    max-width: 400px;
-    line-height: 24px;
-    /*media query*/
-    flex: 0 0 30%;
+  margin-left: 20px;
+  line-height: 1.8em;
+  text-align: justify;
+  max-width: 400px;
+  line-height: 24px;
+  /*media query*/
+  flex: 0 0 30%;
 }
 
 @media only screen and (max-width: 950px) {
-    .bioContainer {
-        flex-direction: column;
-    }
-    .bioText {
-        margin: 20px;  }
-    }
+  .bioContainer {
+    flex-direction: column;
+  }
+  .bioText {
+    margin: 20px;
+  }
+}
