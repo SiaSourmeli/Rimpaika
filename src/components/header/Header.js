@@ -1,55 +1,22 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Button from "../button/Button";
 import styles from "./header.module.css";
-import whiteLogo from '../../assets/logo-white.png'
-
+import whiteLogo from "../../assets/logo-white.png";
 
 function Header() {
-  const [scrollData, setScrollData] = useState({ y: 0, lastY: 0 });
-  const [hideHeader, setHideHeader] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollData((lastState) => {
-        return {
-          y: window.scrollY,
-          lastY: lastState.y,
-        };
-      });
-
-      if (!menuOpen && window.scrollY > 250) {
-        setMenuOpen(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [menuOpen]);
-
-  useEffect(() => {
-    if (scrollData.y > 250 && scrollData.y - scrollData.lastY > 0) {
-      // scrollData.y - scrollData last > 0  this means we are scrolling UP
-      setHideHeader(true);
-    } else {
-      setHideHeader(false);
-    }
-  }, [scrollData]);
 
   const handleMenuClick = () => {
     setMenuOpen(!menuOpen);
   };
 
   return (
-    <header className={`${styles.header} ${hideHeader ? styles.slideUp : ""}`}>
+    <header className={styles.header}>
       <nav className={styles.navbar}>
         <div className={styles.headerContainer}>
-          <div>
-            <a href="/" className={styles.navLogo} aria-label="logo">
-            <img src={whiteLogo} alt=" logo" className={styles.logo}/>
+          <div className={styles.logoWrap}>
+            <a href="/" aria-label="logo">
+              <img src={whiteLogo} alt="logo" className={styles.logo} />
             </a>
           </div>
 
@@ -72,7 +39,7 @@ function Header() {
               </li>
 
               <li>
-                <a href="/contact" className={styles.navLink}>
+                <a href="#contact" className={styles.navLink}>
                   Contact
                 </a>
               </li>

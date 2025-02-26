@@ -1,4 +1,4 @@
-import styles from './hero.module.css'
+import styles from "./hero.module.css";
 
 function Hero() {
   return (
@@ -8,12 +8,12 @@ function Hero() {
         alt="painting"
         className={styles.heroImage}
       />
-    <div className={styles.darkenOverlay}></div>
+      <div className={styles.darkenOverlay}></div>
 
-      {/* <div className={styles.homeImageText}>
+      <div className={styles.homeImageText}>
         <h1 className={styles.homeTitleH1}>Art by</h1>
         <span className={styles.homeTitleH2}>KATERINA RIMPATSIOU</span>
-      </div> */}
+      </div>
     </div>
   );
 }

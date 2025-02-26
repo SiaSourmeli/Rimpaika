@@ -10,7 +10,7 @@ function WorkGallery({ selectedPhotos }) {
 
   useEffect(() => {
     const lightbox = new PhotoSwipeLightbox({
-      gallery: "#gallery--getting-started",
+      gallery: "#gallery",
       children: "a",
       pswpModule: () => import("photoswipe"),
     });
@@ -22,12 +22,13 @@ function WorkGallery({ selectedPhotos }) {
   }, []);
 
   return (
-    <div className="container">
-      <div className={styles.gallery} id="gallery--getting-started">
+    <div>
+      <h3 id="work">WORK</h3>
+      <div className={styles.gallery} id="gallery">
         {imagesToDisplay.map((photo, index) => (
           <a
             key={index}
-            href={photo.full} // Full-size image URL
+            href={photo.full}
             data-pswp-width={photo.width}
             data-pswp-height={photo.height}
             target="_blank"
